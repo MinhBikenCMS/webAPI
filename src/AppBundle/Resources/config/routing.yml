@@ -1,0 +1,21 @@
+api_project_list:
+    path:     /project/list
+    defaults: { _controller: AppBundle:Project:list }
+    methods:  [POST]
+
+api_project_add:
+    path:     /project/add
+    defaults: { _controller: AppBundle:Project:add }
+    methods:  [POST]
+    requirements:
+        id: \d+
+
+api_login:
+    path:     /login
+    defaults: { _controller: AppBundle:User:login }
+    methods:  [POST]
+
+api_project_block_add:
+    path:     /project/block/add
+    defaults: { _controller: AppBundle:ProjectBlock:add }
+    methods:  [POST]

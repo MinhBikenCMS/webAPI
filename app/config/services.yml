@@ -1,0 +1,7 @@
+services:
+    orn.token.authenticator:
+        class: AppBundle\Security\TokenAuthenticator
+        arguments: ['@doctrine.orm.entity_manager']
+
+    orn.form:
+            class:  AppBundle\Service\Form
